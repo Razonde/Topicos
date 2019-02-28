@@ -17,7 +17,7 @@ function write(nombre, decisionTomada, callback){
     if (doc.exists) {
         allData = doc.data;
         var valorActual = 0;
-        if (isNAN(allData[decisionTomada])) {
+        if (isNaN(allData[decisionTomada])) {
           valorActual=1;
         }
         else {
