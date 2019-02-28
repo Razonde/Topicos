@@ -28,6 +28,7 @@ function write(nombre, decisionTomada, callback){
         })
         .then(function() {
             console.log("Document sucessfully updated!");
+            callback();
         })
         .catch(function(error){
           console.error("Error updating document");
@@ -40,6 +41,7 @@ function write(nombre, decisionTomada, callback){
       }, {merge:true})
       .then(function(){
         console.log("Document Written");
+        callback();
       })
       .catch(function(error) {
         console.error("Error adding document: ", error);
