@@ -13,7 +13,7 @@ var db = firebase.firestore();
 function write(nombre, decisionTomada, callback){
   var docRef = db.collection("answers").doc(nombre);
   var allData = null;
-  doc.get().then(function(doc){
+  docRef.get().then(function(doc){
     if (doc.exists) {
         allData = doc.data;
         var valorActual = 0;
