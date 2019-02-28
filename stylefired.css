@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+html, body{
+  background-image: url("Despedido.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Merriweather';
+  color: rgba(0, 0, 0 , 0.9);
+}
+.container-fluid{
+  padding-top: 20px; <!-- 1 Rem = 16 px -->
+}
+h1{
+  font-size: 100px;
+}
