@@ -51,12 +51,13 @@ function write(nombre, decisionTomada, callback){
   })
 }
 var decisionActual = document.getElementById("trebuche").value;
-
+var url1 = document.getElementById("url1").value;
+var url2 = document.getElementById("url2").value;
 document.getElementById("opc1").onclick = function(){
       var decisionTomada = document.getElementById("txt1").innerHTML;
-      write(decisionActual, decisionTomada, function(){window.location.href = "Path1Cont.html"})
+      write(decisionActual, decisionTomada, function(){window.location.href = "url1"})
 }
 document.getElementById("opc2").onclick = function(){
       var decisionTomada = document.getElementById("txt2").innerHTML;
-      write(decisionActual, decisionTomada, function(){window.location.href = "Path1Cont.html"})
+      write(decisionActual, decisionTomada, function(){window.location.href = "url2"})
 }
